@@ -1,0 +1,30 @@
+<div class="item">
+    <button (click)="setVisibilitiMenu()" class="menu">Menu</button>
+  </div>
+  
+  <div class="sidemenu-container" 
+    [style.backgroundColor]="theme" 
+    [style.width]="widthMenu + '%'"
+    [style.display]="visibleMenu ? 'flex' : 'none'">
+  
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqVg_URh9Mvrm3NYaTlCUyiM7r382ohELc1g&s" alt="perfil.png">
+      <p>{{userName}}</p>
+      <button (click)="setVisibilitiBack()" class="back">back</button>
+    </div>
+  
+    <div class="item">
+      <p><span>🗓️</span>Dashboard</p>
+    </div>
+  
+    <div class="item">
+      <p><span>🧑</span>Profile</p>
+    </div>
+  
+    <div class="item-btn">
+      <button class="btnco" (click)="setThemeColor('red')">Change color</button>
+      <button class="btnsi" (click)="setSizeMenu()">Change size</button>
+    </div>
+  
+  </div>
+  

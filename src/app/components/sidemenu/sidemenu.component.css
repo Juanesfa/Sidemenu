@@ -1,0 +1,110 @@
+/* Contenedor principal del menú lateral */
+.sidemenu-container {
+    background-color: #0f4e34;
+    width: 250px; /* Ancho inicial */
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  /* Elementos del menú con fondo propio */
+  .item {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Para separar el contenido a ambos extremos */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .item:hover {
+    background-color: #d4d4d4;
+  }
+  
+  .item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .item p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Botón del menú superior con su propio estilo */
+  .menu {
+    background-color: #008CBA;
+    padding: 15px 25px;
+    border: 2px solid #008CBA;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .menu:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  /* Botón "back" dentro del menú lateral, movido al final */
+  .back {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto; 
+  }
+  
+  .back:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Botones de cambiar color y tamaño del menú */
+  .item-btn {
+    margin-top: 20px;
+  }
+  
+  .item-btn button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btnco {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btnco:hover {
+    background-color: #388e3c;
+  }
+  
+  .btnsi {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .btnsi:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Estilos para los elementos del menú (Dashboard y Profile) */
+  .item span {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  
